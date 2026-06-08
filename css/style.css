@@ -1,0 +1,269 @@
+/*Reseteo*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    min-height: 100%;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url("../image/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.section,
+.hero,
+.hero-body,
+.container,
+.footer{
+    background: transparent;
+}
+
+/*Navbar*/
+
+.navbar{
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    background: rgba(0,0,0,0.15) !important;
+    backdrop-filter: blur(12px);
+
+}
+
+.navbar-menu{
+    justify-content: center;
+}
+
+.navbar-start{
+    margin: 0 auto;
+}
+
+.navbar-brand{
+    height: auto;
+}
+
+.navbar-item{
+    position: relative;
+    color: white;
+    font-weight: 600;
+    height: 4rem;
+}
+
+.navbar-item img {
+    max-height: 3.2rem;
+}
+
+.navbar-item::after{
+    content: "";
+    position: absolute;
+    left: 15%;
+    bottom: 10px;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s ease;
+}
+
+.navbar-item:hover::after{
+    width: 70%;
+}
+
+.navbar-item:hover{
+    background: rgba(255,255,255,0.1);
+}
+
+.navbar-brand{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    background: rgba(0,0,0,0.15) !important;
+    backdrop-filter: blur(12px);
+}
+
+
+/*-------------------------------------------------------------*/
+
+
+@media screen and (max-width: 1023px){
+
+    .navbar-menu{
+        background: rgba(255,255,255,0.08) !important;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+
+        border-radius: 12px;
+        margin-top: 10px;
+
+        box-shadow: none;
+    }
+
+    .navbar-item{
+        text-align: center;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 1023px){
+
+    .navbar-menu{
+        background: rgba(15,23,42,0.7) !important;
+        backdrop-filter: blur(15px);
+
+        border: 1px solid rgba(255,255,255,0.1);
+
+        border-radius: 16px;
+        margin: 10px;
+    }
+
+}
+
+
+.navbar-item{
+    color: white !important;
+}
+
+.navbar-item:hover{
+    background: rgba(255,255,255,0.1) !important;
+}
+
+@media screen and (max-width: 1023px){
+
+    .navbar-start{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+.navbar-burger{
+    border-radius: 12px;
+}
+
+.navbar-burger:hover{
+    background: rgba(255,255,255,0.1);
+}
+
+
+/*Hero*/
+
+.hero-body{
+    background-color: transparent;
+}
+
+/*Sobre Mi*/
+
+.foto-perfil{
+    max-width:250px;
+    border-radius:25%;
+}
+
+.sobreMi {
+    background-color: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+
+/*Tecnologias*/
+
+.tech-card{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 20px;
+    transition: .3s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tech-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+   
+}
+
+.tech-card:hover{
+    transform: translateY(-5px);
+}
+
+.tech-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+@media (max-width: 768px){
+    .tech-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+.box{
+    background-color: rgba(255,255,255,0.08);
+}
+
+/*Porque Elegirme*/
+
+.containerPorque{
+    text-align: center;
+    justify-content: center;
+}
+
+#porque-elegirme .tech-grid{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px){
+    #porque-elegirme .tech-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*Servicios*/
+
+.card{
+    height:100%;
+    transition:.3s;
+}
+
+.cardServicios{
+    text-align: center;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/*Contacto*/
+
+#contacto .container{
+    max-width:700px;
+}
+
+/*Footer*/
+
+.footer{
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(12px);
+    color: white;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
