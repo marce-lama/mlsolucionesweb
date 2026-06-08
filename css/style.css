@@ -153,6 +153,16 @@ body{
 .hero-body{
     background-color: transparent;
 }
+.hero .title,
+.hero .subtitle,
+.hero p{
+    color: white !important;
+}
+
+.hero .title{
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
 
 /*Sobre Mi*/
 
