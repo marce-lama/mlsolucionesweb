@@ -1,6 +1,6 @@
 /*Reseteo*/
 :root {
-    color-scheme: light;
+    color-scheme: dark;
 }
 
 *{
@@ -259,6 +259,23 @@ body{
 
 #contacto .container{
     max-width:700px;
+}
+
+input,
+textarea,
+select {
+    background-color: rgba(255,255,255,0.08);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(255,255,255,0.6);
+}
+
+body, p, h1, h2, h3, h4, h5, h6, label {
+    color: white;
 }
 
 /*Footer*/
