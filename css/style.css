@@ -141,6 +141,7 @@ body{
 
 .navbar-burger{
     border-radius: 12px;
+    color: white;
 }
 
 .navbar-burger:hover{
