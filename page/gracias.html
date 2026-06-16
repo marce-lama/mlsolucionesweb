@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracias por tu consulta | ML Soluciones Digitales</title>
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+
+    <style>
+        html {
+            min-height: 100%;
+            background-color: #0f172a;
+        }
+
+        body {
+            min-height: 100vh;
+            background-image: url("../image/background.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 20px;
+        }
+
+        .gracias-card {
+            max-width: 650px;
+            width: 100%;
+
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(12px);
+
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+
+            padding: 3rem;
+
+            text-align: center;
+            color: white;
+        }
+
+        .icono {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+        }
+
+        .title,
+        .subtitle,
+        p {
+            color: white !important;
+        }
+
+        .boton-volver {
+            margin-top: 2rem;
+        }
+
+        @media(max-width:768px) {
+            .gracias-card {
+                padding: 2rem;
+            }
+
+            .title {
+                font-size: 2rem !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="gracias-card">
+
+        <div class="icono">✅</div>
+
+        <h1 class="title">
+            ¡Gracias por tu consulta!
+        </h1>
+
+        <p class="subtitle is-5">
+            Tu mensaje fue enviado correctamente.
+        </p>
+
+        <p>
+            Me pondré en contacto contigo a la brevedad para analizar tu proyecto
+            y ayudarte a encontrar la mejor solución digital para tu negocio.
+        </p>
+
+        <a href="index.html"
+            class="button is-primary is-medium boton-volver">
+            Volver al inicio
+        </a>
+
+    </div>
+
+</body>
+
+</html>

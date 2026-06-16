@@ -301,13 +301,15 @@
                 Contacto
             </h2>
 
-            <form>
-
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+                <input type="hidden" name="access_key" value="b9f3790a-5f01-4291-a7a9-82b8282dbf1d">
+                <input type="hidden" name="subject" value="Nueva consulta desde la web">
                 <div class="field">
                     <label class="label">Nombre</label>
 
                     <div class="control">
-                        <input class="input" type="text">
+                        <input class="input" type="text" name="nombre" required>
                     </div>
                 </div>
 
@@ -315,7 +317,7 @@
                     <label class="label">Email</label>
 
                     <div class="control">
-                        <input class="input" type="email">
+                        <input class="input" type="email" name="email" required">
                     </div>
                 </div>
 
@@ -323,11 +325,11 @@
                     <label class="label">Mensaje</label>
 
                     <div class="control">
-                        <textarea class="textarea"></textarea>
+                        <textarea class="textarea" name="mensaje" required></textarea>
                     </div>
                 </div>
 
-                <button class="button is-primary">
+                <button class="button is-primary" type="submit">
                     Enviar consulta
                 </button>
 
