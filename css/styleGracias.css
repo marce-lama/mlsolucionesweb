@@ -1,0 +1,60 @@
+html{
+        min-height: 100%;
+        background-color: #0f172a;
+    }
+
+body {
+        min-height: 100vh;
+        background-image: url("../image/background.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 20px;
+    }
+
+.gracias-card {
+    max-width: 650px;
+    width: 100%;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+
+    padding: 3rem;
+
+    text-align: center;
+    color: white;
+}
+
+.icono {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.title,
+.subtitle,
+p {
+    color: white !important;
+}
+
+.boton-volver {
+    margin-top: 2rem;
+}
+
+@media(max-width:768px) {
+    .gracias-card {
+        padding: 2rem;
+    }
+
+    .title {
+        font-size: 2rem !important;
+    }
+}
