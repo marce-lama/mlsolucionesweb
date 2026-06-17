@@ -189,6 +189,16 @@ body{
 }
 
 
+/*Servicios*/
+
+.cardServicios{
+    transition: .3s;
+}
+
+.cardServicios:hover{
+    transform: translateY(-5px);
+}
+
 /*Tecnologias*/
 
 .tech-card{
