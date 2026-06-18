@@ -47,6 +47,10 @@ body{
 
 }
 
+a.navbar-item{
+    color: white;
+}
+
 .navbar-menu{
     justify-content: center;
 }
@@ -104,8 +108,29 @@ body{
 
 @media screen and (max-width: 1023px){
 
+     .navbar{
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+
     .navbar-menu{
+        position: absolute;
+        top: 100%;
+        left: 10px;
+        right: 10px;
+
         background: rgba(15,23,42,0.75) !important;
+        backdrop-filter: blur(15px);
+
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 16px;
+
+        margin: 0;
+    }
+
+    .navbar-menu{
+        background: rgba(15,23,42,0.99) !important;
         backdrop-filter: blur(15px);
 
         border: 1px solid rgba(255,255,255,0.1);
@@ -122,6 +147,14 @@ body{
 
     .navbar-item{
         text-align: center;
+        color: white;
+    }
+    a.navbar-item {
+        color: white;
+    }
+
+    a.navbar-burger{
+        color: white;
     }
 }
 
@@ -171,10 +204,18 @@ body{
     }
 }
 
+
+
 /*Sobre Mi*/
+
+
 
 .section h2 {
     padding-bottom: 2rem;
+}
+
+#miEnfoque{
+    padding: 1rem; 
 }
 
 .foto-perfil{
