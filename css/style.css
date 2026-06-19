@@ -27,7 +27,8 @@ body{
 
 @media (max-width: 768px){
     body{
-        background-attachment: scroll;
+        background-image: url("../image/backgrounMobile2.webp");
+        background-attachment: fixed;
         background-position: center top;
     }
 }
