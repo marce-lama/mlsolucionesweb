@@ -18,6 +18,14 @@ body {
         padding: 20px;
     }
 
+    @media (max-width: 768px){
+    body{
+        background-image: url("../image/backgrounMobile2.webp");
+        background-attachment: fixed;
+        background-position: center top;
+    }
+}
+
 .gracias-card {
     max-width: 650px;
     width: 100%;
