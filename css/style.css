@@ -34,6 +34,13 @@ body{
     background: transparent;
 }
 
+.title,
+.subtitle,
+.section .title,
+.section .subtitle {
+    color: white !important;
+}
+
 /*Navbar*/
 
 .navbar{
@@ -205,8 +212,9 @@ a.navbar-item{
 }
 
 
+/*Hero*/
 
-/*Sobre Mi*/
+/*Mi Enfoque*/
 
 
 
@@ -345,8 +353,8 @@ width: 80px;
 input,
 textarea,
 select {
-    background-color: rgba(255,255,255,0.08);
-    color: white;
+    background-color: rgba(255,255,255,0.08) !important;
+    color: white !important;
     border: 1px solid rgba(255,255,255,0.2);
 }
 
@@ -356,7 +364,7 @@ textarea::placeholder {
 }
 
 body, p, h1, h2, h3, h4, h5, h6, label {
-    color: white;
+    color: white !important;
 }
 
 
@@ -364,10 +372,17 @@ body, p, h1, h2, h3, h4, h5, h6, label {
 /*Footer*/
 
 .footer{
-    background: rgba(15, 23, 42, 0.75);
+    background: rgba(15, 23, 42, 0.75) !important;
     backdrop-filter: blur(12px);
     color: white;
     border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer p,
+.footer a,
+.footer li,
+.footer strong {
+    color: white !important;
 }
 
 .botonWhatsapp {
@@ -391,7 +406,7 @@ body, p, h1, h2, h3, h4, h5, h6, label {
     display: flex;
     justify-content:space-between;
     padding: 2rem;
-    
+    background: rgba(15, 23, 42, 0.75) !important;
 }
 
 .footerContainer ul li{
@@ -435,11 +450,9 @@ body, p, h1, h2, h3, h4, h5, h6, label {
 }
 
 .containerFooterInf{
-    background: rgba(255,255,255,0.08) !important;
+    background: rgba(15, 23, 42, 0.75) !important;
     backdrop-filter: blur(10px);
     color: white;
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 12px;
     padding: 2rem;
 }
 
