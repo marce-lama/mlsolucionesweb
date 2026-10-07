@@ -1,400 +1,1981 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO -->
-    <title>ML Soluciones Digitales | Desarrollo Web Profesional</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="description" content="Diseño y desarrollo de sitios web modernos, rápidos y adaptados a cualquier dispositivo. Soluciones digitales para emprendedores, profesionales y negocios.">
+    <!-- =========================
+         SEO
+    ========================== -->
 
-    <meta name="keywords" content="desarrollo web, diseño web, páginas web, sitios web, frontend, HTML, CSS, JavaScript, desarrollo web Argentina, diseño web Buenos Aires">
+    <title>
+        ML Soluciones Digitales | Web, Sistemas y Automatización
+    </title>
 
-    <meta name="author" content="ML Soluciones Digitales">
+    <meta
+        name="description"
+        content="Creamos sitios web, sistemas de gestión y soluciones digitales para emprendedores, profesionales y negocios. Tecnología pensada para simplificar procesos y hacer crecer tu negocio."
+    >
 
-    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
-    <meta property="og:title" content="ML Soluciones Digitales | Desarrollo Web Profesional">
-    <meta property="og:description" content="Diseño y desarrollo de sitios web modernos, responsivos y optimizados para emprendedores, profesionales y negocios.">
-    <meta property="og:image" content="https://mlserviciosdigitales.com/image/logoOg.webp">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mlserviciosdigitales.com/">
+    <meta
+        name="keywords"
+        content="soluciones digitales, desarrollo web, sistemas de gestión, automatización, páginas web, software para negocios, desarrollo web Argentina"
+    >
 
-    <!-- Twitter/X -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ML Soluciones Digitales | Desarrollo Web Profesional">
-    <meta name="twitter:description" content="Diseño y desarrollo de sitios web modernos y optimizados.">
-    <meta name="twitter:image" content="https://marce-lama.github.io/mlsolucionesweb/image/logoPestañaWeb.webp">
+    <meta
+        name="author"
+        content="ML Soluciones Digitales"
+    >
 
-    <link rel="icon" type="image/png" sizes="96x96" href="./image/logoFavicon2.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0D3X2ZD93D"></script>
+    <!-- =========================
+         OPEN GRAPH
+    ========================== -->
+
+    <meta
+        property="og:title"
+        content="ML Soluciones Digitales | Web, Sistemas y Automatización"
+    >
+
+    <meta
+        property="og:description"
+        content="Creamos soluciones digitales para ayudarte a hacer crecer, organizar y simplificar tu negocio."
+    >
+
+    <meta
+        property="og:image"
+        content="https://mlserviciosdigitales.com/image/logoOg.webp"
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:url"
+        content="https://mlserviciosdigitales.com/"
+    >
+
+
+    <!-- =========================
+         TWITTER / X
+    ========================== -->
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="ML Soluciones Digitales"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Web, sistemas y automatización para negocios."
+    >
+
+    <meta
+        name="twitter:image"
+        content="https://mlserviciosdigitales.com/image/logoOg.webp"
+    >
+
+
+    <!-- =========================
+         FAVICON
+    ========================== -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="96x96"
+        href="./image/logoFavicon2.png"
+    >
+
+
+    <!-- =========================
+         BULMA
+    ========================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    >
+
+
+    <!-- =========================
+         CSS
+    ========================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+
+    <!-- =========================
+         GOOGLE ANALYTICS
+    ========================== -->
+
+    <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-0D3X2ZD93D">
+    </script>
+
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-0D3X2ZD93D');
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag("js", new Date());
+
+        gtag(
+            "config",
+            "G-0D3X2ZD93D"
+        );
+
     </script>
 
 </head>
-<body>  
 
-    <!-- NAVBAR -->
 
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-        <!-- navbar items, navbar burger... -->
-            
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="#inicio"> INICIO </a>
-                <a class="navbar-item" href="#miEnfoque"> COMO TRABAJAMOS </a>
-                <a class="navbar-item" href="#servicios"> SERVICIOS </a>
-                <a class="navbar-item" href="#proyectos"> PROYECTOS </a>
-                <a class="navbar-item" href="#tecnologias"> TECNOLOGIAS </a>
-                <a class="navbar-item" href="#contacto"> CONTACTO </a>
+<body>
+
+
+    <!-- ==================================================
+         NAVBAR
+    =================================================== -->
+
+    <nav
+        class="navbar"
+        role="navigation"
+        aria-label="Navegación principal"
+    >
+
+        <div class="container navbar-container">
+
+
+            <!-- LOGO -->
+
+            <div class="navbar-brand">
+
+                <a
+                    href="#inicio"
+                    class="navbar-logo"
+                    aria-label="ML Soluciones Digitales"
+                >
+
+                    <img
+                        src="image/logoHeroWeb.webp"
+                        alt="ML Soluciones Digitales"
+                    >
+
+                </a>
+
+
+                <!-- BURGER -->
+
+                <a
+                    role="button"
+                    class="navbar-burger"
+                    aria-label="Abrir menú"
+                    aria-expanded="false"
+                    data-target="navbarBasicExample"
+                >
+
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+
+                </a>
+
             </div>
-         </div>   
-    </nav>
-    
-    <!-- SECCIONES -->
 
-    <section id="inicio" class="hero is-fullheight-with-navbar hero-principal">
+
+            <!-- MENU -->
+
+            <div
+                id="navbarBasicExample"
+                class="navbar-menu"
+            >
+
+                <div class="navbar-end">
+
+                    <a
+                        class="navbar-item"
+                        href="#inicio"
+                    >
+                        Inicio
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="#servicios"
+                    >
+                        Servicios
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="#soluciones"
+                    >
+                        Soluciones
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="#proyectos"
+                    >
+                        Proyectos
+                    </a>
+
+                    <a
+                        class="navbar-item"
+                        href="#comoTrabajamos"
+                    >
+                        Cómo trabajamos
+                    </a>
+
+                    <a
+                        class="navbar-item navbar-contacto"
+                        href="#contacto"
+                    >
+                        Contacto
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ==================================================
+         HERO
+    =================================================== -->
+
+    <section
+        id="inicio"
+        class="hero hero-principal"
+    >
+
         <div class="hero-body">
+
             <div class="container">
+
                 <div class="columns is-vcentered">
 
-                    <div class="column is-6">
-                        <h1 class="title is-1">
-                            Transformamos ideas en soluciones digitales.
+
+                    <!-- TEXTO -->
+
+                    <div class="column is-7 hero-contenido">
+
+
+                        <span class="hero-etiqueta">
+
+                            WEB · SISTEMAS · AUTOMATIZACIÓN
+
+                        </span>
+
+
+                        <h1 class="hero-titulo">
+
+                            Transformamos ideas en
+
+                            <span>
+                                soluciones digitales.
+                            </span>
+
                         </h1>
 
-                        <p class="subtitle is-4">
-                            Desarrollamos sitios web profesionales que ayudan a emprendedores y negocios a destacar en internet.
+
+                        <p class="hero-descripcion">
+
+                            Creamos sitios web, sistemas y herramientas
+                            digitales que ayudan a emprendedores,
+                            profesionales y negocios a
+
+                            <strong>
+                                crecer, organizarse y trabajar mejor.
+                            </strong>
+
                         </p>
 
-                        <a href="#contacto" class="button is-primary is-medium">
-                            Solicitar presupuesto
+
+                        <div class="hero-botones">
+
+                            <a
+                                href="#contacto"
+                                class="button boton-principal"
+                            >
+
+                                Contanos qué necesitás
+
+                            </a>
+
+
+                            <a
+                                href="#servicios"
+                                class="button boton-secundario"
+                            >
+
+                                Ver servicios
+
+                            </a>
+
+                        </div>
+
+
+                        <div class="hero-beneficios">
+
+                            <span>
+                                ✓ Atención personalizada
+                            </span>
+
+                            <span>
+                                ✓ Soluciones a medida
+                            </span>
+
+                            <span>
+                                ✓ Acompañamiento
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- IMAGEN -->
+
+                    <div class="column is-5 hero-imagen">
+
+                        <div class="hero-logo-container">
+
+                            <div class="hero-glow"></div>
+
+                            <img
+                                src="image/mockupFlowFit.webp"
+                                alt="ML Soluciones Digitales"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         SERVICIOS
+    =================================================== -->
+
+    <section
+        id="servicios"
+        class="section seccion-servicios"
+    >
+
+        <div class="container">
+
+
+            <div class="encabezado-seccion">
+
+                <span class="seccion-etiqueta">
+                    QUÉ HACEMOS
+                </span>
+
+
+                <h2 class="titulo-seccion">
+
+                    Soluciones pensadas para tu negocio
+
+                </h2>
+
+
+                <p class="descripcion-seccion">
+
+                    No todos los negocios necesitan lo mismo.
+                    Analizamos cada necesidad y desarrollamos
+                    la solución digital más adecuada.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="columns is-multiline servicios-grid">
+
+
+                <!-- DESARROLLO WEB -->
+
+                <div class="column is-6-tablet is-3-desktop">
+
+                    <article class="servicio-card">
+
+                        <div class="servicio-icono">
+
+                            <span>🌐</span>
+
+                        </div>
+
+
+                        <h3>
+                            Desarrollo Web
+                        </h3>
+
+
+                        <p>
+
+                            Creamos sitios web modernos, rápidos y
+                            adaptados a todos los dispositivos para
+                            potenciar la presencia digital de tu negocio.
+
+                        </p>
+
+
+                        <ul>
+
+                            <li>Landing pages</li>
+
+                            <li>Sitios institucionales</li>
+
+                            <li>Webs profesionales</li>
+
+                            <li>Catálogos digitales</li>
+
+                        </ul>
+
+
+                        <a
+                            href="#contacto"
+                            class="servicio-link"
+                        >
+
+                            Consultar
+                            <span>→</span>
+
                         </a>
-                    </div>
 
-                    <div class="column is-6 has-text-centered">
-                        <img src="image/logoHeroWeb.webp" alt="Desarrollo Web">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="miEnfoque" class="section">
-        <div class="container">
-
-            <h2 class="title has-text-centered">
-                Cómo Trabajamos
-            </h2>
-
-            <div class="columns is-vcentered miEnfoque">
-
-                <div class="column is-4 has-text-centered">
-                    <img src="image/nosotros.webp" alt="Marcelo Lama - Desarrollador Web" class="foto-perfil">
-                </div>
-
-                <div class="column is-8 perfil">
-
-                    <p>
-                        ML Soluciones Digitales nace con el objetivo de ayudar a emprendedores, profesionales y negocios a fortalecer su presencia digital mediante soluciones web modernas y efectivas.
-                        Detrás de cada proyecto se encuentra Marcelo, fundador y desarrollador de la marca.
-
-                    </p>
-                    <br>
-
-                    <p>
-                        Cada proyecto se desarrolla de forma personalizada, priorizando el diseño, la experiencia de usuario, el rendimiento y los objetivos de cada cliente.
-                    </p>
-                    <br>
-
-                    <p>
-                        Nuestro objetivo es crear soluciones digitales que transmitan confianza, potencien tu marca y generen nuevas oportunidades de crecimiento.
-
-                    </p>
+                    </article>
 
                 </div>
 
-            </div>
 
-        </div>
-    </section>
-    <section id="servicios" class="section fondo-gris">
 
-        <div class="container">
+                <!-- SISTEMAS -->
 
-            <h2 class="title has-text-centered">
-                Servicios
-            </h2>
+                <div class="column is-6-tablet is-3-desktop">
 
-            <div class="columns">
+                    <article class="servicio-card servicio-destacado">
 
-                <div class="column">
-                    <div class="box cardServicios">
-                        <h3 class="title is-4">
-                            Landing Pages
+                        <div class="servicio-badge">
+
+                            NUEVO
+
+                        </div>
+
+
+                        <div class="servicio-icono">
+
+                            <span>⚙️</span>
+
+                        </div>
+
+
+                        <h3>
+                            Sistemas de Gestión
                         </h3>
 
+
                         <p>
-                            Páginas diseñadas para captar clientes y aumentar
-                            conversiones.
+
+                            Desarrollamos herramientas para organizar
+                            y administrar las tareas de tu negocio
+                            desde un único lugar.
+
                         </p>
-                    </div>
+
+
+                        <ul>
+
+                            <li>Gestión de clientes</li>
+
+                            <li>Turnos y reservas</li>
+
+                            <li>Pagos y cuotas</li>
+
+                            <li>Paneles administrativos</li>
+
+                        </ul>
+
+
+                        <a
+                            href="#contacto"
+                            class="servicio-link"
+                        >
+
+                            Contanos tu idea
+                            <span>→</span>
+
+                        </a>
+
+                    </article>
+
                 </div>
 
-                <div class="column">
-                    <div class="box cardServicios">
-                        <h3 class="title is-4">
-                            Sitios Institucionales
+
+
+                <!-- AUTOMATIZACION -->
+
+                <div class="column is-6-tablet is-3-desktop">
+
+                    <article class="servicio-card">
+
+                        <div class="servicio-icono">
+
+                            <span>⚡</span>
+
+                        </div>
+
+
+                        <h3>
+                            Automatización
                         </h3>
 
+
                         <p>
-                            Presencia profesional para empresas y negocios.
+
+                            Automatizamos tareas repetitivas e
+                            integramos herramientas para ahorrar
+                            tiempo y simplificar procesos.
+
                         </p>
-                    </div>
+
+
+                        <ul>
+
+                            <li>Formularios automáticos</li>
+
+                            <li>Notificaciones</li>
+
+                            <li>Integraciones mediante APIs</li>
+
+                            <li>Procesos personalizados</li>
+
+                        </ul>
+
+
+                        <a
+                            href="#contacto"
+                            class="servicio-link"
+                        >
+
+                            Quiero automatizar
+                            <span>→</span>
+
+                        </a>
+
+                    </article>
+
                 </div>
 
-                <div class="column">
-                    <div class="box cardServicios">
-                        <h3 class="title is-4">
-                            Mantenimiento Web
+
+
+                <!-- MANTENIMIENTO -->
+
+                <div class="column is-6-tablet is-3-desktop">
+
+                    <article class="servicio-card">
+
+                        <div class="servicio-icono">
+
+                            <span>🛠️</span>
+
+                        </div>
+
+
+                        <h3>
+                            Soporte y Mantenimiento
                         </h3>
 
+
                         <p>
-                            Actualizaciones, optimización y soporte técnico.
+
+                            Acompañamos tus soluciones digitales
+                            para que continúen funcionando,
+                            evolucionando y creciendo.
+
                         </p>
-                    </div>
+
+
+                        <ul>
+
+                            <li>Actualizaciones</li>
+
+                            <li>Modificaciones</li>
+
+                            <li>Optimización</li>
+
+                            <li>Soporte técnico</li>
+
+                        </ul>
+
+
+                        <a
+                            href="#contacto"
+                            class="servicio-link"
+                        >
+
+                            Consultar planes
+                            <span>→</span>
+
+                        </a>
+
+                    </article>
+
                 </div>
+
 
             </div>
 
         </div>
+
     </section>
-    <section id="porque-elegirme" class="section">
 
-        <div class="container containerPorque">
 
-            <h2 class="title has-text-centered">
-                ¿Por qué elegirnos?
-            </h2>
 
-            <p class="subtitle has-text-centered">
-                Soluciones web pensadas para ayudar a tu negocio a crecer.
-            </p>
+    <!-- ==================================================
+         SOLUCIONES / PROBLEMAS
+    =================================================== -->
 
-            <div class="tech-grid">
-
-                <div class="tech-card">
-                    <h3>🤝</h3>
-                    <h4>Atención personalizada.</h4>
-                    <p>
-                        Trabajamos de forma cercana con cada cliente para comprender sus necesidades y ofrecer una solución a medida.
-                    </p>
-                </div>
-
-                <div class="tech-card">
-                    <h3>📱</h3>
-                    <h4>Diseño Responsive.</h4>
-                    <p>
-                        Tu sitio se verá correctamente en computadoras,
-                        tablets y celulares.
-                    </p>
-                </div>
-
-                <div class="tech-card">
-                    <h3>🚀</h3>
-                    <h4>Optimización SEO.</h4>
-                    <p>
-                        Desarrollamos sitios web preparados para mejorar su visibilidad en buscadores como Google.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-
-        </section>
-
-   
-   
-    <section id="proyectos" class="section">
+    <section
+        id="soluciones"
+        class="section seccion-soluciones"
+    >
 
         <div class="container">
 
-            <h2 class="title has-text-centered">
-                Proyectos
-            </h2>
 
-            <div id="containerProyectos" class="columns is-centered is-multiline">
+            <div class="encabezado-seccion">
 
-                <!--LOS PROYECTOS VIENEN DE PROYECTOS.JSON-->
+                <span class="seccion-etiqueta">
+
+                    SOLUCIONES REALES
+
+                </span>
+
+
+                <h2 class="titulo-seccion">
+
+                    ¿Qué necesitás resolver?
+
+                </h2>
+
+
+                <p class="descripcion-seccion">
+
+                    No necesitás saber qué tecnología usar.
+                    Contanos el problema y nosotros pensamos
+                    la solución.
+
+                </p>
 
             </div>
 
+
+
+            <div class="soluciones-grid">
+
+
+                <article class="solucion-card">
+
+                    <span class="solucion-numero">
+                        01
+                    </span>
+
+
+                    <div>
+
+                        <h3>
+                            Necesito conseguir más clientes
+                        </h3>
+
+
+                        <p>
+
+                            Creamos una presencia digital profesional
+                            que muestre tus servicios y facilite
+                            que nuevos clientes te encuentren.
+
+                        </p>
+
+
+                        <span class="solucion-tipo">
+
+                            DESARROLLO WEB
+
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="solucion-card">
+
+                    <span class="solucion-numero">
+                        02
+                    </span>
+
+
+                    <div>
+
+                        <h3>
+                            Administro todo con Excel
+                        </h3>
+
+
+                        <p>
+
+                            Podemos transformar tus planillas y
+                            procesos manuales en un sistema
+                            organizado y accesible desde cualquier
+                            dispositivo.
+
+                        </p>
+
+
+                        <span class="solucion-tipo">
+
+                            SISTEMAS DE GESTIÓN
+
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="solucion-card">
+
+                    <span class="solucion-numero">
+                        03
+                    </span>
+
+
+                    <div>
+
+                        <h3>
+                            Pierdo tiempo haciendo tareas repetitivas
+                        </h3>
+
+
+                        <p>
+
+                            Analizamos tu proceso y buscamos qué
+                            tareas podemos automatizar para ahorrar
+                            tiempo y reducir trabajo manual.
+
+                        </p>
+
+
+                        <span class="solucion-tipo">
+
+                            AUTOMATIZACIÓN
+
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="solucion-card">
+
+                    <span class="solucion-numero">
+                        04
+                    </span>
+
+
+                    <div>
+
+                        <h3>
+                            Gestiono reservas por WhatsApp
+                        </h3>
+
+
+                        <p>
+
+                            Podemos crear una herramienta donde
+                            tus clientes consulten disponibilidad,
+                            reserven y gestionen sus turnos.
+
+                        </p>
+
+
+                        <span class="solucion-tipo">
+
+                            TURNOS Y RESERVAS
+
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
     </section>
-    <section id="tecnologias" class="section">
+
+
+
+    <!-- ==================================================
+         PROYECTOS
+    =================================================== -->
+
+    <section
+        id="proyectos"
+        class="section seccion-proyectos"
+    >
+
+        <div class="container">
+
+
+            <div class="encabezado-seccion">
+
+                <span class="seccion-etiqueta">
+
+                    NUESTRO TRABAJO
+
+                </span>
+
+
+                <h2 class="titulo-seccion">
+
+                    Proyectos
+
+                </h2>
+
+
+                <p class="descripcion-seccion">
+
+                    Algunos proyectos en los que transformamos
+                    ideas en experiencias digitales.
+
+                </p>
+
+            </div>
+
+
+
+            <!--
+                LOS PROYECTOS SE CARGAN
+                DESDE proyectos.json
+            -->
+
+            <div
+                id="containerProyectos"
+                class="columns is-centered is-multiline"
+            >
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         COMO TRABAJAMOS
+    =================================================== -->
+
+    <section
+        id="comoTrabajamos"
+        class="section seccion-proceso"
+    >
+
+        <div class="container">
+
+
+            <div class="encabezado-seccion">
+
+                <span class="seccion-etiqueta">
+
+                    NUESTRO PROCESO
+
+                </span>
+
+
+                <h2 class="titulo-seccion">
+
+                    Cómo trabajamos
+
+                </h2>
+
+
+                <p class="descripcion-seccion">
+
+                    Un proceso simple, claro y pensado para
+                    transformar una necesidad en una solución.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="proceso-grid">
+
+
+                <article class="proceso-card">
+
+                    <span class="proceso-numero">
+                        01
+                    </span>
+
+
+                    <h3>
+                        Nos contás tu idea
+                    </h3>
+
+
+                    <p>
+
+                        Escuchamos qué necesitás, cómo funciona
+                        tu negocio y qué problema querés resolver.
+
+                    </p>
+
+                </article>
+
+
+
+                <article class="proceso-card">
+
+                    <span class="proceso-numero">
+                        02
+                    </span>
+
+
+                    <h3>
+                        Diseñamos la solución
+                    </h3>
+
+
+                    <p>
+
+                        Analizamos las alternativas y definimos
+                        una propuesta adaptada a tus objetivos.
+
+                    </p>
+
+                </article>
+
+
+
+                <article class="proceso-card">
+
+                    <span class="proceso-numero">
+                        03
+                    </span>
+
+
+                    <h3>
+                        La desarrollamos
+                    </h3>
+
+
+                    <p>
+
+                        Construimos la solución manteniendo una
+                        comunicación directa durante todo
+                        el proyecto.
+
+                    </p>
+
+                </article>
+
+
+
+                <article class="proceso-card">
+
+                    <span class="proceso-numero">
+                        04
+                    </span>
+
+
+                    <h3>
+                        Te acompañamos
+                    </h3>
+
+
+                    <p>
+
+                        Una vez publicada, podemos continuar
+                        trabajando en mantenimiento, soporte
+                        y nuevas mejoras.
+
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         NOSOTROS
+    =================================================== -->
+
+    <section id="nosotros" class="section seccion-nosotros">
 
     <div class="container">
 
-        <h2 class="title has-text-centered">
-            Tecnologías
-        </h2>
+        <div class="nosotros-box">
 
-        <div class=" is-mobile has-text-centered tech-grid">
+            <div class="nosotros-contenido">
 
-            <div class="column">
-                <div class="tech-card">
-                    <img src="image/html.png" alt="HTML5" class="tech-logo">
-                    <p>HTML5</p>
-                </div>
+                <span class="seccion-etiqueta">
+                    SOBRE ML
+                </span>
+
+                <h2 class="titulo-seccion">
+                    Tecnología cercana.<br>
+                    <span>Soluciones que tienen sentido.</span>
+                </h2>
+
+                <p>
+                    En ML Soluciones Digitales ayudamos a emprendedores,
+                    profesionales y negocios a transformar necesidades
+                    reales en soluciones digitales.
+                </p>
+
+                <p>
+                    No empezamos pensando en una tecnología.
+                    Primero buscamos entender
+                    <strong>qué necesitás resolver</strong>,
+                    cómo trabajás hoy y qué podemos mejorar.
+                </p>
+
+                <p>
+                    A partir de ahí diseñamos una solución simple,
+                    funcional y preparada para crecer junto con tu negocio.
+                </p>
+
+                <a href="#contacto" class="button boton-secundario">
+                    Hablemos de tu proyecto
+                </a>
+
             </div>
 
-            <div class="column">
-                <div class="tech-card">
-                    <img src="image/css.png" alt="CSS3" class="tech-logo">
-                    <p>CSS3</p>
-                </div>
-            </div>
 
-            <div class="column">
-                <div class="tech-card">
-                    <img src="image/js.png" alt="JavaScript" class="tech-logo">
-                    <p>JavaScript</p>
-                </div>
-            </div>
+            <div class="nosotros-metodo">
 
-            <div class="column">
-                <div class="tech-card">
-                    <img src="image/git.png" alt="Git" class="tech-logo">
-                    <p>Git</p>
+                <div class="metodo-header">
+                    <span class="metodo-punto"></span>
+                    <span>NUESTRA FORMA DE TRABAJAR</span>
                 </div>
-            </div>
 
-            <div class="column">
-                <div class="tech-card">
-                    <img src="image/github.png" alt="github" class="tech-logo">
-                    <p>Github</p>
+                <div class="metodo-item">
+
+                    <span class="metodo-numero">
+                        01
+                    </span>
+
+                    <div>
+                        <h3>Analizamos</h3>
+
+                        <p>
+                            Entendemos tu necesidad y cómo
+                            funciona actualmente tu negocio.
+                        </p>
+                    </div>
+
                 </div>
+
+
+                <div class="metodo-linea"></div>
+
+
+                <div class="metodo-item">
+
+                    <span class="metodo-numero">
+                        02
+                    </span>
+
+                    <div>
+                        <h3>Diseñamos</h3>
+
+                        <p>
+                            Buscamos una solución simple y
+                            adecuada para lo que necesitás.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="metodo-linea"></div>
+
+
+                <div class="metodo-item">
+
+                    <span class="metodo-numero">
+                        03
+                    </span>
+
+                    <div>
+                        <h3>Desarrollamos</h3>
+
+                        <p>
+                            Convertimos la propuesta en una
+                            solución digital funcional.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="metodo-linea"></div>
+
+
+                <div class="metodo-item">
+
+                    <span class="metodo-numero">
+                        04
+                    </span>
+
+                    <div>
+                        <h3>Acompañamos</h3>
+
+                        <p>
+                            Seguimos disponibles para soporte,
+                            mejoras y evolución.
+                        </p>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
 
     </div>
 
-    </section>
-    <section id="contacto" class="section">
+</section>
+
+
+    <!-- ==================================================
+         POR QUE ML
+    =================================================== -->
+
+    <section
+        id="porqueML"
+        class="section seccion-porque"
+    >
 
         <div class="container">
 
-            <h2 class="title has-text-centered">
-                Contacto
-            </h2>
-            <form id="contactForm">
 
-                <input type="hidden" name="access_key" value="b9f3790a-5f01-4291-a7a9-82b8282dbf1d">
-                <input type="hidden" name="subject" value="Nueva consulta desde ML Soluciones Digitales">
+            <div class="encabezado-seccion">
 
-                <input type="checkbox" name="botcheck" style="display:none;">
+                <span class="seccion-etiqueta">
 
-                <div class="field">
-                    <label class="label">Nombre</label>
-                    <div class="control">
-                        <input class="input" type="text" name="nombre" required>
-                    </div>
+                    POR QUÉ ML
+
+                </span>
+
+
+                <h2 class="titulo-seccion">
+
+                    Más que desarrollar,
+                    buscamos entender tu negocio.
+
+                </h2>
+
+            </div>
+
+
+
+            <div class="columns is-multiline porque-grid">
+
+
+                <div class="column is-6-tablet is-3-desktop">
+
+                    <article class="porque-card">
+
+                        <span>
+                            🤝
+                        </span>
+
+                        <h3>
+                            Atención personalizada
+                        </h3>
+
+                        <p>
+
+                            Cada proyecto comienza entendiendo
+                            tus necesidades y objetivos.
+
+                        </p>
+
+                    </article>
+
                 </div>
 
-                <div class="field">
-                    <label class="label">Email</label>
-                    <div class="control">
-                        <input class="input" type="email" name="email" required>
-                    </div>
+
+
+                <div class="column is-6-tablet is-3-desktop">
+
+                    <article class="porque-card">
+
+                        <span>
+                            🎯
+                        </span>
+
+                        <h3>
+                            Soluciones a medida
+                        </h3>
+
+                        <p>
+
+                            Buscamos la solución adecuada para
+                            tu negocio, sin paquetes genéricos.
+
+                        </p>
+
+                    </article>
+
                 </div>
 
-                <div class="field">
-                    <label class="label">Mensaje</label>
-                    <div class="control">
-                        <textarea class="textarea" name="mensaje" required></textarea>
-                    </div>
+
+
+                <div class="column is-6-tablet is-3-desktop">
+
+                    <article class="porque-card">
+
+                        <span>
+                            💬
+                        </span>
+
+                        <h3>
+                            Comunicación directa
+                        </h3>
+
+                        <p>
+
+                            Mantenemos una comunicación clara
+                            durante todo el desarrollo.
+
+                        </p>
+
+                    </article>
+
                 </div>
 
-                <button id="btnEnviar" class="button is-primary" type="submit">
-                    Enviar consulta
-                </button>
 
-            </form>
+
+                <div class="column is-6-tablet is-3-desktop">
+
+                    <article class="porque-card">
+
+                        <span>
+                            🚀
+                        </span>
+
+                        <h3>
+                            Pensado para crecer
+                        </h3>
+
+                        <p>
+
+                            Desarrollamos soluciones que puedan
+                            evolucionar junto con tu negocio.
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+            </div>
+
         </div>
 
     </section>
-    <footer class="footer">
-        <div class="footerContainer">
-            <div>
-                <ul>
-                    <a href="#inicio"><li>INICIO</li></a>
-                    <a href="#miEnfoque"><li>COMO TRABAJAMOS</li></a>
-                    <a href="#servicios"><li>SERVICIOS</li></a>
-                    <a href="#proyectos"><li>PROYECTOS</li></a>
-                    <a href="#tecnologias"><li>TECNOLOGIAS</li></a>  
-                    <a href="#contacto"><li>CONTACTO</li></a>  
-                </ul>
-            </div>
-            <div class="imagenFooter">
-                <img src="image/logoHeroWeb.webp" alt="ML Soluciones Digitales - Desarrollo Web Profesional">
 
-            </div>
-            <div class="footerRedes">
-                <h3 class="tituloFooter">Seguinos en</h3>
 
-                <div class="contenedorLogos">
-                    <a href="https://wa.me/541126220281" aria-label="WhatsApp">
-                        <img src="image/logoWhats.png" alt="">
-                    </a>
 
-                    <a href="https://www.facebook.com/share/1Es32AMxZU/" aria-label="Facebook">
-                        <img src="image/logoFace.png" alt="">
-                    </a>
+    <!-- ==================================================
+         TECNOLOGIAS
+    =================================================== -->
 
-                    <a href="https://www.instagram.com/ml_solucionesdigitales?igsh=MW84OTFyZzk5M2N3Mg==" aria-label="Instagram">
-                        <img src="image/logoInst.png" alt="">
-                    </a>
+    <section
+        id="tecnologias"
+        class="section seccion-tecnologias"
+    >
+
+        <div class="container">
+
+
+            <p class="tecnologias-titulo">
+
+                Algunas de las tecnologías que utilizamos
+
+            </p>
+
+
+            <div class="tecnologias-lista">
+
+
+                <div>
+
+                    <img
+                        src="image/html.png"
+                        alt="HTML5"
+                    >
+
+                    <span>HTML5</span>
+
                 </div>
+
+
+                <div>
+
+                    <img
+                        src="image/css.png"
+                        alt="CSS3"
+                    >
+
+                    <span>CSS3</span>
+
+                </div>
+
+
+                <div>
+
+                    <img
+                        src="image/js.png"
+                        alt="JavaScript"
+                    >
+
+                    <span>JavaScript</span>
+
+                </div>
+
+
+                <div>
+
+                    <img
+                        src="image/git.png"
+                        alt="Git"
+                    >
+
+                    <span>Git</span>
+
+                </div>
+
+
+                <div>
+
+                    <img
+                        src="image/github.png"
+                        alt="GitHub"
+                    >
+
+                    <span>GitHub</span>
+
+                </div>
+
+
             </div>
+
         </div>
-        <div class="containerFooterInf">
-            <div class="footerInferior">
+
+    </section>
+
+
+
+    <!-- ==================================================
+         CTA
+    =================================================== -->
+
+    <section class="section seccion-cta">
+
+        <div class="container">
+
+
+            <div class="cta-container">
+
+
+                <div>
+
+                    <span class="seccion-etiqueta">
+
+                        HABLEMOS
+
+                    </span>
+
+
+                    <h2>
+
+                        ¿Tenés una idea o necesitás
+                        resolver algo en tu negocio?
+
+                    </h2>
+
+
+                    <p>
+
+                        Contanos qué necesitás.
+                        Analizamos tu caso y buscamos juntos
+                        la solución digital más adecuada.
+
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="https://wa.me/541126220281?text=Hola%20ML%20Soluciones%20Digitales,%20quiero%20consultar%20por%20una%20solución%20para%20mi%20negocio."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button boton-principal boton-whatsapp"
+                >
+
+                    Hablar por WhatsApp
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         CONTACTO
+    =================================================== -->
+
+    <section
+        id="contacto"
+        class="section seccion-contacto"
+    >
+
+        <div class="container">
+
+
+            <div class="columns contacto-container">
+
+
+                <!-- INFORMACION -->
+
+                <div class="column is-5 contacto-info">
+
+
+                    <span class="seccion-etiqueta">
+
+                        CONTACTO
+
+                    </span>
+
+
+                    <h2>
+
+                        Contanos sobre tu proyecto.
+
+                    </h2>
+
+
+                    <p>
+
+                        No importa si todavía no tenés definida
+                        la solución. Contanos qué necesitás hacer
+                        y podemos analizar juntos la mejor alternativa.
+
+                    </p>
+
+
+                    <div class="contacto-beneficios">
+
+                        <p>
+                            ✓ Consulta inicial sin compromiso
+                        </p>
+
+                        <p>
+                            ✓ Atención personalizada
+                        </p>
+
+                        <p>
+                            ✓ Propuesta adaptada a tu necesidad
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- FORMULARIO -->
+
+                <div class="column is-7">
+
+
+                    <form
+                        id="contactForm"
+                        class="contacto-form"
+                    >
+
+
+                        <input
+                            type="hidden"
+                            name="access_key"
+                            value="b9f3790a-5f01-4291-a7a9-82b8282dbf1d"
+                        >
+
+
+                        <input
+                            type="hidden"
+                            name="subject"
+                            value="Nueva consulta desde ML Soluciones Digitales"
+                        >
+
+
+                        <input
+                            type="checkbox"
+                            name="botcheck"
+                            style="display:none;"
+                        >
+
+
+
+                        <div class="field">
+
+                            <label class="label">
+
+                                Nombre
+
+                            </label>
+
+
+                            <div class="control">
+
+                                <input
+                                    class="input"
+                                    type="text"
+                                    name="nombre"
+                                    placeholder="Tu nombre"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="field">
+
+                            <label class="label">
+
+                                Email
+
+                            </label>
+
+
+                            <div class="control">
+
+                                <input
+                                    class="input"
+                                    type="email"
+                                    name="email"
+                                    placeholder="tu@email.com"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="field">
+
+                            <label class="label">
+
+                                ¿Qué necesitás?
+
+                            </label>
+
+
+                            <div class="control">
+
+                                <div class="select is-fullwidth">
+
+                                    <select name="servicio">
+
+                                        <option value="">
+
+                                            Seleccioná una opción
+
+                                        </option>
+
+                                        <option value="Desarrollo Web">
+
+                                            Desarrollo Web
+
+                                        </option>
+
+                                        <option value="Sistema de Gestión">
+
+                                            Sistema de Gestión
+
+                                        </option>
+
+                                        <option value="Automatización">
+
+                                            Automatización
+
+                                        </option>
+
+                                        <option value="Mantenimiento">
+
+                                            Soporte / Mantenimiento
+
+                                        </option>
+
+                                        <option value="Otro">
+
+                                            No estoy seguro / Otro
+
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="field">
+
+                            <label class="label">
+
+                                Contanos un poco más
+
+                            </label>
+
+
+                            <div class="control">
+
+                                <textarea
+                                    class="textarea"
+                                    name="mensaje"
+                                    placeholder="¿Qué necesitás resolver?"
+                                    required
+                                ></textarea>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <button
+                            id="btnEnviar"
+                            class="button boton-principal"
+                            type="submit"
+                        >
+
+                            Enviar consulta
+
+                        </button>
+
+
+                    </form>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+
+    <footer class="footer">
+
+
+        <div class="container">
+
+
+            <div class="footer-principal">
+
+
+                <!-- MARCA -->
+
+                <div class="footer-marca">
+
+                    <img
+                        src="image/logoHeroWeb.webp"
+                        alt="ML Soluciones Digitales"
+                    >
+
+
+                    <p>
+
+                        Transformamos ideas en
+                        soluciones digitales.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- NAVEGACION -->
+
+                <div class="footer-columna">
+
+                    <h3>
+                        Navegación
+                    </h3>
+
+
+                    <a href="#inicio">
+                        Inicio
+                    </a>
+
+                    <a href="#servicios">
+                        Servicios
+                    </a>
+
+                    <a href="#soluciones">
+                        Soluciones
+                    </a>
+
+                    <a href="#proyectos">
+                        Proyectos
+                    </a>
+
+                    <a href="#comoTrabajamos">
+                        Cómo trabajamos
+                    </a>
+
+                    <a href="#contacto">
+                        Contacto
+                    </a>
+
+                </div>
+
+
+
+                <!-- SERVICIOS -->
+
+                <div class="footer-columna">
+
+                    <h3>
+                        Servicios
+                    </h3>
+
+
+                    <a href="#servicios">
+                        Desarrollo Web
+                    </a>
+
+                    <a href="#servicios">
+                        Sistemas de Gestión
+                    </a>
+
+                    <a href="#servicios">
+                        Automatización
+                    </a>
+
+                    <a href="#servicios">
+                        Mantenimiento
+                    </a>
+
+                </div>
+
+
+
+                <!-- REDES -->
+
+                <div class="footer-columna footer-redes">
+
+                    <h3>
+                        Seguinos
+                    </h3>
+
+
+                    <div class="footer-social">
+
+
+                        <a
+                            href="https://wa.me/541126220281"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="WhatsApp"
+                        >
+
+                            <img
+                                src="image/logoWhats.png"
+                                alt="WhatsApp"
+                            >
+
+                        </a>
+
+
+                        <a
+                            href="https://www.facebook.com/share/1Es32AMxZU/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Facebook"
+                        >
+
+                            <img
+                                src="image/logoFace.png"
+                                alt="Facebook"
+                            >
+
+                        </a>
+
+
+                        <a
+                            href="https://www.instagram.com/ml_solucionesdigitales?igsh=MW84OTFyZzk5M2N3Mg=="
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram"
+                        >
+
+                            <img
+                                src="image/logoInst.png"
+                                alt="Instagram"
+                            >
+
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- FOOTER INFERIOR -->
+
+            <div class="footer-inferior">
+
                 <p>
+
                     © 2026 ML Soluciones Digitales.
                     Todos los derechos reservados.
+
                 </p>
-            </div>
-            <div class="footerDesarrollador">
+
+
                 <p>
-                Transformando ideas en soluciones digitales.
+
+                    Web · Sistemas · Automatización
+
                 </p>
+
             </div>
+
+
         </div>
+
     </footer>
-    <a href="https://wa.me/541126220281" class="botonWhatsapp" aria-label="Contactar por WhatsApp" target="_blank" rel="noopener noreferrer">
-        <img class="logoWhatsapp" src="image/whatsappLogo.png" alt="WhatsApp">
+
+
+
+    <!-- ==================================================
+         WHATSAPP FLOTANTE
+    =================================================== -->
+
+    <a
+        href="https://wa.me/541126220281?text=Hola%20ML%20Soluciones%20Digitales,%20quiero%20hacer%20una%20consulta."
+        class="botonWhatsapp"
+        aria-label="Contactar por WhatsApp"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+
+        <img
+            class="logoWhatsapp"
+            src="image/whatsappLogo.png"
+            alt="WhatsApp"
+        >
+
     </a>
 
+
+
+    <!-- ==================================================
+         JAVASCRIPT
+    =================================================== -->
+
     <script src="js/navbar.js"></script>
+
     <script src="js/proyectos.js"></script>
+
     <script src="js/form.js"></script>
+
+
 </body>
+
 </html>
